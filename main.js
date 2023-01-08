@@ -45,9 +45,20 @@ window.onload = () => {
     else {
         document.querySelector('.header .headerTwo').classList.remove('acitve');
     }
+
+    fadeOut();
+}
+// Header Scroll End
+
+// Loader
+function Loader () {
+  document.querySelector('.loader-container').classList.add('active');
 }
 
-// Header Scroll End
+function fadeOut() {
+  setTimeout(Loader, 2000);
+}
+// End
 
 // Swiper js
 var swiper = new Swiper(".books-slider", {
@@ -70,7 +81,7 @@ var swiper = new Swiper(".books-slider", {
     },
   });
 
-//   next
+//   next featur-slider
 
 var swiper = new Swiper(".featured-slider", {
     loop: true,
@@ -103,6 +114,81 @@ var swiper = new Swiper(".featured-slider", {
     },
   });
 
+
+  //   next > arrivals slide
+
+var swiper = new Swiper(".arrivals-slider", {
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+      delay: 9500,
+      disableOnInteraction: false
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+
+// next review slider
+
+var swiper = new Swiper(".review-slider", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+      delay: 9500,
+      disableOnInteraction: false
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// next blogs slider
+
+var swiper = new Swiper(".blogs-slider", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+      delay: 9500,
+      disableOnInteraction: false
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 
 

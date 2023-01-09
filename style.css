@@ -894,6 +894,11 @@ section .top-title span {
     .mobile-fixed-footer {
         display: block;
     }
+
+    .footer .credit {
+        padding-bottom: 64px;
+    }
+
  }
 
 /***** End Responsive Csss *****/
